@@ -1,27 +1,20 @@
 package enums;
 
 public enum StudyProfile {
-
     PHYSICS("Физика"),
     COMPUTER_SCIENCE("Информатика"),
-    JAVA("JAVA-разработчик"),
+    MATHEMATICS("Математика"),
+    JAVA("Java Разработчик"),
     MEDICINE("Медицина"),
-    HISTORY("История"),
-    MATHEMATICS("Математика");
+    LINGUISTICS("Лингвистика");
 
-    private String profileName;
+    private final String profileName;
 
-    StudyProfile(String profileName) {
+    private StudyProfile(String profileName) {
         this.profileName = profileName;
     }
-
 
     public String getProfileName() {
-        return profileName;
-    }
-
-    public StudyProfile setProfileName(String profileName) {
-        this.profileName = profileName;
-        return this;
+        return this.profileName;
     }
 }
